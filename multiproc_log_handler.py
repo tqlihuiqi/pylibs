@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
 
-import codecs
 import datetime
 import logging
 import os

@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 
 class MySQLClient(object):
 
-    def __init__(self, host, port, username, password, db, charset='utf8'):
+    def __init__(self, host, port, username, password, db, charset="utf8"):
         """ 初始化MySQL客户端连接池
 
         :参数 host: MySQL服务器地址
@@ -20,7 +20,7 @@ class MySQLClient(object):
             "mysql://" + username + ":" + password + "@" + host + ":" + str(port) + "/" + db + "?charset=" + charset,
             pool_size = 50,
             pool_recycle = 60,
-            strategy = 'threadlocal'
+            strategy = "threadlocal"
         )
 
 
